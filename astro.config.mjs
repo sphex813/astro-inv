@@ -5,5 +5,9 @@ import image from "@astrojs/image";
 import vue from "@astrojs/vue";
 
 export default defineConfig({
-  integrations: [tailwind(), vue({ appEntrypoint: "/src/_app.ts" }), image()],
+  integrations: [
+    tailwind(),
+    vue({ appEntrypoint: "/src/config/vueConfig.ts" }),
+    image(),
+  ],
 });

@@ -25,7 +25,7 @@
 
 <script setup lang="ts">
   import type { ISurveyData } from "../models/SurveyData.interface";
-  import { supabase } from "../supabase";
+  import { supabase } from "../config/supabase";
 
   const submitHandler = async (fields: ISurveyData) => {
     // await supabase.from("survey_results").insert(fields);
