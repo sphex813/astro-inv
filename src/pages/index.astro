@@ -1,4 +1,5 @@
 ---
+import Survey from "../components/Survey.vue";
 import Layout from "../layouts/Layout.astro";
 ---
 
@@ -24,6 +25,7 @@ import Layout from "../layouts/Layout.astro";
   <p class="text-sm">v dome kultúri</p>
   <p class="text-sm">Belasnkého 12</p>
   <p class="text-sm">Liptovský Mikuláš</p>
+  <Survey client:load />
 
   <style>
     @font-face {
