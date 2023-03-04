@@ -1,15 +1,17 @@
 export const formKitTheme = {
   global: {
-    fieldset: "max-w-md border border-gray-400 rounded px-2 pb-1",
-    help: "text-xs text-gray-500",
+    fieldset:
+      "max-w-md border border-gray-400 dark:border-gray-200 rounded px-2 pb-1",
+    help: "text-xs text-gray-500 dark:text-gray-300",
     inner:
       "formkit-disabled:bg-gray-200 formkit-disabled:cursor-not-allowed formkit-disabled:pointer-events-none",
     input:
       "appearance-none bg-transparent focus:outline-none focus:ring-0 focus:shadow-none",
-    label: "block mb-1 font-bold text-sm",
+    label: "block mb-1 font-bold text-sm dark:text-white",
     legend: "font-bold text-sm",
-    loaderIcon: "inline-flex items-center w-4 text-gray-600 animate-spin",
-    message: "text-red-500 mb-1 text-xs",
+    loaderIcon:
+      "inline-flex items-center w-4 text-gray-600 dark:text-gray-400 animate-spin",
+    message: "text-red-500 dark:text-red-300 mb-1 text-xs",
     messages: "list-none p-0 mt-1 mb-0",
     outer: "mb-4 formkit-disabled:opacity-50",
     prefixIcon:
@@ -20,20 +22,21 @@ export const formKitTheme = {
 
   "family:box": {
     decorator:
-      "block relative h-5 w-5 mr-2 rounded bg-white bg-gradient-to-b from-transparent to-gray-200 ring-1 ring-gray-400 peer-checked:ring-yellow-500 text-transparent peer-checked:text-yellow-500",
+      "block relative h-5 w-5 mr-2 rounded bg-white dark:bg-black bg-gradient-to-b from-transparent to-gray-200 dark:to-gray-600 ring-1 ring-gray-400 peer-checked:ring-yellow-500 text-transparent peer-checked:text-yellow-500",
     decoratorIcon:
       "flex p-[3px] w-full h-full absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2",
     help: "mb-2 mt-1.5",
     input:
       "absolute w-0 h-0 overflow-hidden opacity-0 pointer-events-none peer",
-    label: "$reset text-sm text-gray-700 mt-1 select-none",
+    label:
+      "$reset text-sm dark:text-gray-100 text-gray-700 dark:text-white mt-1 select-none",
     wrapper: "flex items-center mb-1",
   },
   "family:text": {
     inner:
-      "flex items-center max-w-md ring-1 ring-gray-400 focus-within:ring-yellow-500 focus-within:ring-2 [&>label:first-child]:focus-within:text-yellow-500 rounded mb-1",
+      "flex items-center max-w-md ring-1 ring-gray-400 dark:ring-gray-600 dark:focus-within:ring-yellow-500 focus-within:ring-yellow-500 focus-within:ring-2 [&>label:first-child]:focus-within:text-yellow-500 rounded mb-1",
     input:
-      "w-full px-3 py-2 border-none text-base text-gray-700 placeholder-gray-400",
+      "w-full px-3 py-2 border-none text-base dark:text-gray-100 text-gray-700 placeholder-gray-400",
   },
 
   "family:button": {
@@ -49,17 +52,18 @@ export const formKitTheme = {
   },
   select: {
     inner:
-      "flex relative max-w-md items-center rounded mb-1 ring-1 ring-gray-400 focus-within:ring-blue-500 focus-within:ring-2 [&>span:first-child]:focus-within:text-blue-500",
+      "flex relative max-w-md items-center rounded mb-1 ring-1 ring-gray-400 dark:ring-gray-600 focus-within:ring-yellow-500 dark:focus-within:ring-yellow-500 focus-within:ring-2 [&>span:first-child]:focus-within:text-yellow-500",
     input:
-      'w-full pl-3 pr-8 py-2 border-none text-base text-gray-700 placeholder-gray-400 formkit-multiple:p-0 data-[placeholder="true"]:text-gray-400 formkit-multiple:data-[placeholder="true"]:text-inherit',
+      'w-full pl-3 pr-8 py-2 border-none text-base text-gray-700 dark:text-gray-100 placeholder-gray-400 formkit-multiple:p-0 data-[placeholder="true"]:text-gray-400 formkit-multiple:data-[placeholder="true"]:text-inherit',
     selectIcon:
       "flex p-[3px] shrink-0 w-5 mr-2 -ml-[1.5em] h-full pointer-events-none",
-    option: "formkit-multiple:p-3 formkit-multiple:text-sm text-gray-700",
+    option:
+      "formkit-multiple:p-3 formkit-multiple:text-sm text-gray-700 dark:text-gray-100",
   },
   textarea: {
     inner:
-      "flex max-w-md rounded mb-1 ring-1 ring-gray-400 focus-within:ring-blue-500 [&>label:first-child]:focus-within:text-blue-500",
+      "flex max-w-md rounded mb-1 ring-1 ring-gray-400 dark:ring-gray-600 focus-within:ring-yellow-500 dark:focus-within:ring-yellow-500 [&>label:first-child]:focus-within:text-yellow-500",
     input:
-      "block w-full h-32 px-3 py-3 border-none text-base text-gray-700 placeholder-gray-400 focus:shadow-outline",
+      "block w-full h-32 px-3 py-3 border-none text-base dark:text-gray-100 text-gray-700 placeholder-gray-400 focus:shadow-outline",
   },
 };

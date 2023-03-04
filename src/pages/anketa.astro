@@ -1,0 +1,9 @@
+---
+import "../styles/global.scss";
+import SurveyResult from "../components/SurveyResult.vue";
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title="Anketa">
+  <SurveyResult client:only />
+</Layout>
