@@ -1,5 +1,5 @@
-import dayjs, { Dayjs } from "dayjs";
 import { useTimestamp } from "@vueuse/core";
+import dayjs, { Dayjs } from "dayjs";
 import { computed } from "vue";
 
 export const useCountdown = (dateOfInvite: Dayjs) => {

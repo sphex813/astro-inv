@@ -44,11 +44,10 @@
 </template>
 
 <script setup lang="ts">
-import Timer from "./Timer.vue";
-import type { ISurveyData } from "../models/SurveyData.interface";
-import { supabase } from "../config/supabase";
-import { ref } from "vue";
 import { useStorage } from "@vueuse/core";
+import { supabase } from "../config/supabase";
+import type { ISurveyData } from "../models/SurveyData.interface";
+import Timer from "./Timer.vue";
 const surveyCompleted = useStorage("survey-completed", false);
 
 const submitHandler = async (fields: ISurveyData) => {
