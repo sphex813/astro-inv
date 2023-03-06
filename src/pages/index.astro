@@ -5,7 +5,9 @@ import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout title="Pozvánka">
-  <div class="bg-image flex h-full flex-col items-center justify-center">
+  <div
+    class="bg-image flex h-full flex-col items-center justify-center bg-neutral-900"
+  >
     <Invite />
   </div>
   <div
@@ -20,7 +22,7 @@ import Layout from "../layouts/Layout.astro";
       <div>Tak budem vďačnejší,</div>
       <div>keď inú drobnosť budem od Teba mať.</div>
     </div>
-    <Survey client:load />
+    <Survey client:visible />
   </div>
 </Layout>
 

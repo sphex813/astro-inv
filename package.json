@@ -6,13 +6,14 @@
     "dev": "astro dev",
     "start": "astro dev",
     "build": "astro build",
-    "preview": "astro preview",
+    "preview": "astro build && astro preview --port 4000",
     "astro": "astro",
     "format": "prettier --write .",
     "deploy": "astro build && firebase deploy --project pozvanka-oslava-mz"
   },
   "dependencies": {
     "@astrojs/image": "^0.15.1",
+    "@astrojs/partytown": "^1.0.3",
     "@astrojs/tailwind": "^3.0.1",
     "@astrojs/vue": "^2.0.1",
     "@formkit/icons": "^1.0.0-beta.15",
@@ -22,14 +23,16 @@
     "astro": "^2.0.16",
     "canvas-confetti": "^1.6.0",
     "dayjs": "^1.11.7",
-    "tailwindcss": "^3.2.7",
     "vue": "^3.2.47"
   },
   "devDependencies": {
     "@types/canvas-confetti": "^1.6.0",
+    "autoprefixer": "^10.4.13",
+    "postcss": "^8.4.21",
     "prettier": "^2.8.4",
     "prettier-plugin-astro": "^0.8.0",
     "prettier-plugin-tailwindcss": "^0.2.4",
-    "sass": "^1.58.3"
+    "sass": "^1.58.3",
+    "tailwindcss": "^3.2.7"
   }
 }

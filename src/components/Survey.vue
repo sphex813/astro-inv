@@ -38,7 +38,7 @@
     >
       Ďakujem za vyplnenie, tešíme sa na Vás!
       <div class="mb-2">Uvidíme sa za:</div>
-      <Timer client:only />
+      <Timer />
     </div>
   </div>
 </template>
