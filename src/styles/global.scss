@@ -1,20 +1,18 @@
-:root {
-  --app-height: 100%;
-}
 html,
 body {
   padding: 0;
   margin: 0;
   height: 100vh;
-  height: var(--app-height);
+  height: 100dvh;
+}
 
-  input:-webkit-autofill,
-  input:-webkit-autofill:hover,
-  input:-webkit-autofill:focus,
-  input:-webkit-autofill:active {
-    -webkit-box-shadow: 0 0 0 30px black inset !important;
-    -webkit-text-fill-color: white !important;
-  }
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  box-shadow: 0 0 0 30px black inset !important;
+  -webkit-box-shadow: 0 0 0 30px black inset !important;
+  -webkit-text-fill-color: white !important;
 }
 
 @font-face {
@@ -22,6 +20,7 @@ body {
   src: url("/fonts/Parisienne-Regular.ttf");
   font-display: swap;
 }
+
 @font-face {
   font-family: Montserrat;
   src: url("/fonts/Montserrat-Regular.ttf");
