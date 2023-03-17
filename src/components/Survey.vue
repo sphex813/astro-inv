@@ -38,17 +38,22 @@
     >
       Ďakujem za vyplnenie, tešíme sa na Vás!
       <div class="mb-2">Uvidíme sa za:</div>
-      <Timer />
+      <slot></slot>
     </div>
   </div>
 </template>
 
 <script setup lang="ts">
 import { useStorage } from "@vueuse/core";
+import { onMounted, ref } from "vue";
 import { supabase } from "../config/supabase";
 import type { ISurveyData } from "../models/SurveyData.interface";
-import Timer from "./Timer.vue";
-const surveyCompleted = useStorage("survey-completed", false);
+const surveyCompleted = ref(false);
+
+//surveyCompleted needs to update in onMounted because of hydration missmatch
+onMounted(() => {
+  surveyCompleted.value = useStorage("survey-completed", false).value;
+});
 
 const submitHandler = async (fields: ISurveyData) => {
   const { error } = await supabase.from("survey_results").insert(fields);

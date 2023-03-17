@@ -1,6 +1,7 @@
 ---
-import Invite from "../components/Invite.astro";
+import Invite from "../components/Invite.vue";
 import Survey from "../components/Survey.vue";
+import Timer from "../components/Timer.vue";
 import Layout from "../layouts/Layout.astro";
 ---
 
@@ -22,7 +23,9 @@ import Layout from "../layouts/Layout.astro";
       <div>Tak budem vďačnejší,</div>
       <div>keď inú drobnosť budem od Teba mať.</div>
     </div>
-    <Survey client:visible />
+    <Survey client:visible>
+      <Timer client:only="vue" />
+    </Survey>
   </div>
 </Layout>
 
