@@ -33,7 +33,7 @@
         </p>
       </div>
     </div>
-    <p class="text-sm">v hostinci Vrbica</p>
+    <p class="text-sm">Bútľavá Vŕba</p>
     <p class="text-sm">Nábrežie A. Stodolu 1</p>
     <p class="text-sm">Liptovský Mikuláš</p>
   </div>
