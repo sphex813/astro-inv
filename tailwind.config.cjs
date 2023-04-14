@@ -13,6 +13,10 @@ module.exports = {
       backdropBlur: {
         xs: "2px",
       },
+      colors: {
+        primary: "#facc15",
+        "primary-dark": "#ca8a04",
+      },
     },
   },
   plugins: [formKitTailwind],

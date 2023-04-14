@@ -1,7 +1,7 @@
 <template>
   <div class="container mx-auto rounded-xl px-3 pt-3 shadow-lg sm:w-[450px]">
     <FormKit type="form" @submit="submitHandler" v-if="!surveyCompleted">
-      <div class="pb-4 text-yellow-500">Prosím vyplňte:</div>
+      <div class="pb-4 text-primary">Prosím vyplňte:</div>
       <FormKit
         type="text"
         label="Meno / Rodina"

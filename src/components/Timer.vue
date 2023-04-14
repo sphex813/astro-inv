@@ -1,7 +1,7 @@
 <template>
   <div class="container flex justify-center text-xs dark:text-white">
     <div class="flex flex-col items-center justify-center">
-      <div class="text-2xl text-yellow-500">{{ daysTo }}</div>
+      <div class="text-2xl text-primary">{{ daysTo }}</div>
       <div>D</div>
     </div>
     <div class="text-2xl">:</div>
